@@ -1,0 +1,390 @@
+html, body {
+    color: #444444;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color:#fbfbfb ;
+    /* background: #fbfbfb center; */
+    /* url(https://assets.tumblr.com/images/x.gif?v=1) */
+    /* background-attachment: fixed;
+    background-repeat: repeat; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    -webkit-animation: fadein 2.5s;
+    -o-animation: fadein  2.5s;
+    
+}
+.cage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.wrap {
+    position: relative;
+    width: calc(540px + 470px);
+    height: 100%;
+    margin: 0 auto 0;
+    /* padding: 10px 0 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* NAVIGATION */
+a {
+    color: #000000;
+    text-decoration: none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#sidebar-cont {
+    order: 0;
+    position: relative;
+    width: 400px;
+}
+#sidebar-tall {
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.side-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.blob {
+    position: absolute;
+    margin-top: -47%;
+    z-index: -1;
+    transform: scale(1.9);
+    transform-origin: 55% 0;
+    -webkit-transform: scale(1.9);
+    -webkit-transform-origin: 55% 0;
+    -o-transform: scale(1.9);
+    -o-transform-origin: 55% 0;
+    -moz-transform: scale(1.9);
+    -moz-transform-origin: 55% 0;
+    -ms-transform: scale(1.9);
+}
+.side-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #27231d;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    z-index: -1;
+}
+.circle-2 {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #27231d;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    right: -60px;
+    z-index: -1;
+}
+#sidebar-tall h2 {
+    font-size: 1.4em;
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: #000000;
+}
+#description {
+    text-align: center;
+}
+.morelinks {
+    margin-top: 25px;
+    text-align: center;
+}
+.morelinks a {
+    width: 40%;
+    display: inline-block;
+    margin: 5px;
+    padding: 2px 10px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #d4c3b5;
+    color: #000000;
+    border: 2px dashed transparent;
+}
+.morelinks a:hover {
+    color: #000000;
+    background-color: transparent;
+    border: 2px dashed #27231d;
+}
+.homelinks {
+    margin-top: 20px;
+}
+.homelinks a {
+    margin: 0 15px;
+    font-weight: 700;
+}
+.homelinks a:hover {
+    color: #64848c;
+}
+
+/*  PAGE CONTENT */
+#page-section{
+    order: 0;
+    position: relative;
+    width: 550px;
+}
+#page-cont{
+    order: 1;
+    position: fixed;
+    width: 550px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-content{
+    background-color: white;
+    height: 575px;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-button{
+    background-color: #d4c3b5;
+    color: #000000;
+    border: 2px dashed transparent;
+    padding: 2px 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.home-button:hover {
+    color: #000000;
+    background-color: #64848c;
+    border: 2px dashed #27231d;
+    
+}
+.projects{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.box{
+    height: 200px;
+    width: 200px;
+}
+.project-title{
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    margin: 17px 0px;
+    padding: 8px;
+}
+.project-button{
+    background-color: #d4c3b5;
+    color: #000000;
+    border: 2px dashed transparent;
+    padding: 6px 13px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+.project-button:hover {
+    color: #000000;
+    background-color: #64848c;
+}
+.box-main{
+    border: 2px solid #d4c3b5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(95, 158, 160, 0.616); */
+}
+/* .box-main:hover{
+    border: 3px dashed #27231d;
+
+} */
+.box1{
+    background-image: url(/images/cactus.PNG);
+    background-position:center;
+    background-size: cover;
+}
+.box2{
+    background-image: url(/images/chatscreen.PNG);
+    background-position:center;
+    background-size: cover;
+}
+.box3{
+    background-image: url(/images/movies.PNG);
+    background-position:center;
+    background-size: cover;
+}
+.box4{
+    background-image: url(/images/construction.PNG);
+    background-position:center;
+    background-size: cover;
+}
+.code-lang{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 0px;
+    overflow: visible;
+}
+.capsule{
+    display: inline-block;
+    padding: 0px 8px;
+    border: 2px solid #27231d;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 45px;
+    font-weight: bold;
+}
+
+
+/* The Modal (background) */
+.myBtn{
+    background-color: #d4c3b5;
+    color: #000000;
+    border: 2px dashed transparent;
+    padding: 6px 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    transition-duration: 0.5s;
+}
+.myBtn:hover {
+    color: #ffffff;
+    background-color: #64848c;
+    border-radius: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content,
+  .modal2-content,
+  .modal3-content,
+  .modal4-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-description{
+      padding-left: 20px;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Contact */
+
+.feedback-input {
+    color:#000000;
+    font-family: 'Rubik', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #d4c3b5;
+    transition: all 0.3s;
+    padding:8px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #64848c; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    width: 100%;
+    background:#d4c3b5;
+    border:2px solid #d4c3b5;
+    cursor:pointer;
+    color:#444444;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+    font-weight:700;
+    padding-top:8px;
+    padding-bottom:8px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    
+  }
+  [type="submit"]:hover { 
+    background:#64848c; 
+    border: 2px dashed #27231d;
+}

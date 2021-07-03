@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Sfichi Laura</title>
+    <style>
+        html,
+        body {
+            color: #444444;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 180%;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        a {
+            color: black;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #64848c;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="cage">
-        <div class="wrap">
-            <aside id="sidebar-cont">
-                <aside id="sidebar-tall">
+<body style="background-color: #fbfbfb;">
+    <div class="container mx-auto">
+        <div class="container d-flex justify-content-center align-items-center mt-5">
+            <div class="row mt-5 justify-content-center align-items-center w-100">
+                <div class="col-12 col-md-6 col-lg-5 d-flex flex-column justify-content-center align-items-center">
                     <div class="side-image">
                         <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#d4c3b5"
@@ -24,47 +50,45 @@
                         <div class="circle"></div>
                         <div class="circle-2"></div>
                     </div>
-                    <h2>Laura Sfichi</h2>
-                    <div id="description">Welcome to my Portofolio! <br>
-                        o propozitie despre mine?? Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet 
+                    <h3 class="mt-5 mb-3 text-uppercase fw-bold fs-4 text-dark">Laura Sfichi</h3>
+                    <div id="description" class="text-center  mx-5">
+                        <p class="fw-bold">Front-End Developer</p>
+                       <p> Welcome to my portofolio! <br>
+                        Hi, I'm Laura, nice to meet you. <br>
+                        Please take a look around!</p>
                     </div>
-                    <nav class="morelinks">
+                    <nav class="homelinks d-flex flex-md-column">
                         <a href="/">Home</a>
-                        <a href="about.html" style="background-color:#64848c;">About</a>
+                        <a href="about.html" style="background-color: #64848c;">About</a>
                         <a href="projects.html">Projects</a>
                         <a href="contact.html">Contact</a>
                     </nav>
-                    <nav class="homelinks">
+                    <nav class="morelinks">
                         <a href="">github</a> /
-                        <a href="">linkedin</a> /
-                        <a href="">facebook</a>
+                        <a href="">linkedin</a>
                     </nav>
-                </aside>
-
-            </aside>
-            <section id="page-section">
-                <section id="page-cont">
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 mt-5 mt-md-0" style="background-color: white; height: 575px;">
                     <div class="main-content">
-                        <h2>About me</h2>
+                        <h2 style="font-size: 27px;">About me</h2>
 
-                        <p>Hello, I'm Laura S^$%^#</p>
-                        <p>doua propozitii despre mine aici --Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Sequi, odio!</p>
-                        <p>Ceva despre cat de interesata/ pasionata de domeniu sunt-- Lorem ipsum dolor sit amet. Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Sint, totam.</p>
-                        <p style="font-weight: bold;">Skills: --cuvinte furate de la cineva</p>
-                        <p>Development: Front-end frameworks (vue, Bootstrap), Responsive web, Client-side optimization, Rapid
-                            prototyping, Progressive enhancement, Performance across devices
-                           <br> Design: User interface, Web animation, User experience, Visual design,</p>
+                        <p>Hello, I'm Laura Sfichi</p>
+                        <p>I am a huge cat lover /ᐠ｡ꞈ｡ᐟ\! Oh, and I also like to code. 
+                            I enjoy learning and bringing ideas to life in the browser.</p>
+                        <p>When I'm not obsessing over cats I spend my time prototyping, experimenting, learing,  researching  and coding. If there is a problem, I seek ways to fix it. Whether it takes contemplating or picking up a lesson in a framework I don’t know, I’ve grown to embrace the challenges that development can bring.</p>
+                        <p style="font-weight: bold;">Skills:</p>
+                        <p>Development: Front-end frameworks, Responsive web, Client-side optimization,
+                            Rapid prototyping, Performance across devices
+                            <br> Design: User interface, Web animation, User experience, Visual design,
+                        </p>
 
 
                         <p style="font-weight: bold;">Tools:</p>
-                        <p>Development: Javascrpit, CSS(and sass), NodeJs?, command line?
-                          <br>  Design: Adobe Photoshop?, In-browser Prototyping?</p>
+                        <p>HTML, CSS, Sass, Javascrpit, Bootstrap, Vue, NodeJs, Terminal</p>
                         <p class="home-button"><a href="contact.html">Contact me here</a></p>
                     </div>
-                </section>
-            </section>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -68,15 +68,18 @@ a {
     border-radius: 10px;
 }
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border: 2px dashed #27231d;
     background-color: transparent;
     border-radius: 100%;
     position: absolute;
-    top: -20px;
-    left: -60px;
+    top: -19px;
+    left: 98px;
     z-index: -1;
+    -webkit-animation:spin 36s linear infinite;
+    -moz-animation:spin 36s linear infinite;
+    animation:spin 36s linear infinite;
 }
 .circle-2 {
     width: 150px;
@@ -85,9 +88,12 @@ a {
     background-color: transparent;
     border-radius: 100%;
     position: absolute;
-    top: -20px;
-    right: -60px;
+    top: -7px;
+    right: 0px;
     z-index: -1;
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
 }
 #sidebar-tall h2 {
     font-size: 154em;
@@ -321,6 +327,13 @@ a {
     background:#64848c; 
     border: 2px dashed #27231d;
 }
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 

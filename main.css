@@ -136,22 +136,6 @@ a {
 }
 
 /*  PAGE CONTENT */
-#page-section{
-    order: 0;
-    position: relative;
-    width: 550px;
-}
-#page-cont{
-    order: 1;
-    position: fixed;
-    width: 550px;
-    height: 100%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .main-content{
     background-color: white;
     padding: 10px 15px;
@@ -159,6 +143,12 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   animation: fadein 2.5s;
+   -moz-animation: fadein 2.5s;
+   -webkit-animation: fadein 2.5s;
+   -o-animation: fadein  2.5s;
 }
 .home-button{
     background-color: #d4c3b5;
@@ -367,7 +357,7 @@ a {
 @media (min-width: 1200px) { 
     .main-content{
         min-width: 515px;
-        max-width: 533px;
+        max-width: 531px;
     }
  }
 

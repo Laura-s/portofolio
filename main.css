@@ -206,8 +206,10 @@ a {
     transition-duration: 0.5s;
 }
 .box-main:hover{
-    backdrop-filter: grayscale(1);
+    border: dashed 2px black;
 }
+
+
 .box1{
     background-image: url(/images/cactus.PNG);
     background-position:center;
